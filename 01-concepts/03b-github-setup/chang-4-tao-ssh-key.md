@@ -11,6 +11,28 @@
 
 ---
 
+## Vì sao dùng SSH key?
+
+> 🏠 **Ẩn dụ: ổ khóa và chìa khóa.**
+>
+> Hãy tưởng tượng GitHub là căn nhà kho chứa code, còn bạn giữ **một chiếc chìa khóa duy nhất**.
+>
+> - **Public key** giống như **ổ khóa** bạn gắn lên cửa nhà GitHub. Ai nhìn thấy ổ khóa cũng không sao — chỉ nhìn ổ khóa thì không mở được cửa.
+> - **Private key** là **chìa khóa** bạn giữ trong túi (máy tính của bạn). Không đưa cho ai, không đăng lên mạng.
+>
+> Mỗi lần push, GitHub không hỏi mật khẩu. Nó đưa ra một "chiếc hộp đã khóa" bằng ổ khóa của bạn; bạn mở hộp bằng chìa khóa riêng và trả lời đúng. GitHub kiểm tra bằng ổ khóa công khai → biết chắc là bạn. **Chìa khóa riêng không bao giờ rời khỏi máy bạn.**
+>
+> So với mật khẩu/token:
+> - Mật khẩu là **câu thần chú dùng chung**: ai nghe lén hoặc lấy được là dùng được.
+> - Private key là **chìa khóa vật lý trong túi**: không gửi qua mạng, nên không thể bị đánh cắp trên đường truyền.
+> - Dùng SSH còn giúp push **không phải nhập mật khẩu** mỗi lần.
+>
+> 💡 Tạo key **một lần**, sau đó dùng lại cho mọi repo trên máy.
+>
+> ℹ️ GitHub đã bỏ xác thực Git bằng mật khẩu tài khoản từ 2021. Nếu dùng HTTPS, bạn phải tạo **Personal Access Token (PAT)** — token cũng là một "mật khẩu" cần bảo vệ. SSH key tránh được việc phải lưu token trong máy.
+
+---
+
 ## Bước 4.1 — Kiểm tra đã có key chưa
 
 ```bash
