@@ -3,6 +3,9 @@
 > Dành cho bạn **chưa có tài khoản GitHub** và **chưa từng đưa code lên mạng**.
 > Làm tuần tự từng chặng. Xong chặng nào, tick vào ô chặng đó.
 
+> 🪟 **Windows:** dùng **Git Bash** cho mọi lệnh terminal trong các chặng. Không dùng Command Prompt (`cmd`).
+> Chưa có Git Bash → làm Chặng 1 (cài Git for Windows) trước, rồi quay lại Chặng 0.
+
 ## Quy tắc
 
 - **Đừng đọc hết một lượt**. Mở 1 file → làm → kiểm tra → mới sang file tiếp theo.

@@ -4,13 +4,18 @@
 
 90% công cụ lập trình (git, npm, build...) chạy bằng CLI. Biết terminal = không sợ môi trường.
 
+> 🪟 **Windows:** mở **Git Bash** (cài kèm [Git for Windows](https://git-scm.com/download/win)) để dùng đúng các lệnh bên dưới.
+> Command Prompt (`cmd`) **không hiểu** `~`, `ls`, `touch`...; PowerShell hiểu `~` nhưng không có `touch`.
+
 ## Khái niệm cần hiểu
 
 - **Working directory**: thư mục hiện tại terminal đang đứng.
 - **Absolute path** vs **relative path**:
-  - `/Users/ten/du-an` (tuyệt đối)
+  - macOS/Linux: `/Users/ten/du-an` hoặc `/home/ten/du-an` (tuyệt đối)
+  - Windows (Git Bash): `/c/Users/ten/du-an`, ứng với `C:\Users\ten\du-an`
   - `./du-an` hoặc `../` (tương đối)
 - **Root** `/`, **home** `~`.
+  - Windows (Git Bash): `~` = `C:\Users\<tên-bạn>`
 
 ## Lệnh cần thuộc
 

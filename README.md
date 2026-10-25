@@ -20,9 +20,14 @@ Mục tiêu: **không bị kẹt vì môi trường** trước khi bước vào 
 
 ## Yêu cầu môi trường
 
-- [ ] Terminal (macOS/Linux: Terminal, Windows: Git Bash hoặc WSL)
+- [ ] Terminal
+  - macOS/Linux: Terminal có sẵn
+  - Windows: **Git Bash** (cài kèm [Git for Windows](https://git-scm.com/download/win)) — khuyến nghị; hoặc WSL
 - [ ] VS Code
 - [ ] Git
 - [ ] Tài khoản GitHub
+
+> 🪟 **Dùng Windows?** Toàn bộ lệnh trong tài liệu được viết cho **Git Bash**. Không dùng Command Prompt (`cmd`) vì `cmd` không hiểu `~`, `ls`, `touch`...
+> Chưa có Git Bash → cài **Git for Windows** trước, rồi quay lại làm bài.
 
 > ⚠️ Không cần giỏi ngay. Cần **làm tay** — đọc 5 phút, gõ 30 phút.

@@ -16,10 +16,13 @@ Hiểu 3 vùng này là hiểu 80% Git.
 
 ## Lệnh cần thuộc
 
+> 🪟 **Windows:** chạy các lệnh dưới trong **Git Bash** (cài kèm Git for Windows). Git hoạt động giống nhau trên Windows, macOS và Linux.
+
 ```bash
 # Cấu hình 1 lần
 git config --global user.name "Ten"
 git config --global user.email "email@example.com"
+git config --global init.defaultBranch main   # repo mới dùng nhánh main (khớp bài thực hành)
 
 # Khởi tạo & lưu
 git init

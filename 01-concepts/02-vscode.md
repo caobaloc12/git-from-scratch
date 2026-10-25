@@ -25,6 +25,9 @@
 
 Mở bằng `` Ctrl + ` ``. Đứng đúng thư mục project → gõ lệnh Git/npm ngay tại đây.
 
+> 🪟 **Windows:** đặt **Git Bash** làm terminal mặc định: trong panel Terminal bấm dấu `∨` cạnh nút `+` → **Select Default Profile** → chọn **Git Bash** → mở terminal mới.
+> Đừng để mặc định là Command Prompt (`cmd`) — các lệnh trong tài liệu sẽ không chạy.
+
 ## Settings nên bật
 
 - Format on save (Prettier)

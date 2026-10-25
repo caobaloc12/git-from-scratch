@@ -2,6 +2,8 @@
 
 Làm trên chính repo `git-from-scratch` này.
 
+> 🪟 **Windows:** dùng **Git Bash** cho mọi lệnh trong bài. Không dùng Command Prompt (`cmd`).
+
 ## Bài 1 — Commit đầu tiên
 1. `git status` → xem có gì chưa tracked.
 2. `git add .`

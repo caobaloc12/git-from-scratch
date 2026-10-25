@@ -3,7 +3,8 @@
 **Mục tiêu:** chuẩn bị môi trường và nắm đường đi, tránh bỡ ngỡ khi bắt đầu.
 **Thời lượng:** 10–15 phút.
 
-> 🧠 Chặng 0 **không cài gì cả**. Chỉ kiểm tra bạn đã "sẵn sàng" chưa.
+> 🧠 Chặng 0 hầu như **không cài gì** — chỉ kiểm tra bạn đã "sẵn sàng" chưa.
+> 🪟 Ngoại lệ: Windows chưa có **Git Bash** thì cài Git for Windows (Chặng 1) trước, rồi quay lại làm Bước 0.3.
 
 ---
 
@@ -21,9 +22,10 @@ Ghi nhớ OS vì các chặng sau sẽ có nhánh riêng cho từng OS.
 
 ## Bước 0.2 — Mở Terminal
 
-**Windows:** Start → gõ `Git Bash`.
+**Windows:** Start → gõ `Git Bash` → Enter.
 👁️ **Nếu thấy** Git Bash → mở nó (sẽ dùng suốt Chặng 1–7).
-👁️ **Nếu KHÔNG thấy** → chưa có Git, tạm dùng **Command Prompt** (Start → `cmd`).
+👁️ **Nếu KHÔNG thấy** → máy chưa có Git. **Không dùng Command Prompt (`cmd`)** vì `cmd` không hiểu `~`, `ls`, `touch`...
+→ Cài **Git for Windows** (kèm Git Bash) tại [git-scm.com/download/win](https://git-scm.com/download/win), mở lại Git Bash rồi quay lại Bước 0.3.
 
 **macOS:** `Cmd + Space` → gõ `Terminal` → Enter.
 
@@ -47,7 +49,7 @@ Trong terminal, gõ **lần lượt** từng dòng (mỗi dòng Enter một lầ
 ```bash
 pwd
 ```
-👁️ In ra `.../Users/ten-ban` hoặc `/home/ten-ban` → đó là **thư mục nhà** (home). Đúng.
+👁️ In ra `.../Users/ten-ban` (macOS), `/home/ten-ban` (Linux) hoặc `/c/Users/ten-ban` (Windows – Git Bash) → đó là **thư mục nhà** (home). Đúng.
 
 ```bash
 ls
@@ -59,6 +61,8 @@ cd Desktop
 pwd
 ```
 👁️ `pwd` bây giờ in ra đường dẫn **kết thúc bằng** `/Desktop`.
+
+> 🪟 **Windows + OneDrive:** nếu `cd Desktop` báo `No such file or directory`, Desktop của bạn đang được OneDrive sao lưu → dùng `cd ~/OneDrive/Desktop`.
 
 ```bash
 cd ..
@@ -80,6 +84,9 @@ Chưa làm được → dừng lại, nhờ giảng viên / bạn bè hướng d
 
 Chúng ta sẽ làm việc trong 1 thư mục tên `git-from-scratch`, đặt ở **Workspace** cho dễ tìm.
 
+> 🪟 **Windows:** `~` trong Git Bash = `C:\Users\<tên-bạn>`, nên `~/Workspace/github` chính là `C:\Users\<tên-bạn>\Workspace\github`.
+> Nếu tạo thư mục bằng File Explorer, hãy tạo đúng đường dẫn này — thanh địa chỉ Explorer **không hiểu** `~`.
+
 ### Kiểm tra đã có chưa
 
 ```bash
@@ -94,13 +101,13 @@ ls ~/Workspace/github
 
 **Cách 1 — Bạn được gửi file .zip:**
 1. Giải nén file zip → được thư mục `git-from-scratch`.
-2. Kéo thả thư mục đó vào `~/Workspace/github/`.
+2. Kéo thả thư mục đó vào `~/Workspace/github/` (Windows: `C:\Users\<tên-bạn>\Workspace\github`).
 
 **Cách 2 — Bạn được gửi link GitHub:**
 1. Mở link dạng `https://github.com/<username-giao-vien>/git-from-scratch`.
 2. Bấm nút xanh **`<> Code`** (góc phải trên danh sách file).
 3. Chọn **`Download ZIP`**.
-4. Giải nén file vừa tải → kéo thả thư mục vào `~/Workspace/github/`.
+4. Giải nén file vừa tải → kéo thả thư mục vào `~/Workspace/github/` (Windows: `C:\Users\<tên-bạn>\Workspace\github`).
 
 > 🆘 **Không có file zip, cũng không có link?** → Liên hệ giảng viên/người phụ trách. **Không tự tạo thư mục trống** — vì sẽ thiếu các file hướng dẫn.
 
@@ -123,7 +130,7 @@ cd ~/Workspace/github/git-from-scratch
 pwd
 ```
 
-👁️ `pwd` phải in đường dẫn **kết thúc bằng** `/git-from-scratch`. Nếu không → `cd` lại.
+👁️ `pwd` phải in đường dẫn **kết thúc bằng** `/git-from-scratch` (Windows: dạng `/c/Users/.../git-from-scratch`). Nếu không → `cd` lại.
 
 ```bash
 ls

@@ -2,11 +2,16 @@
 
 Làm tay từng bước trong terminal. Gõ lệnh, không dùng chuột.
 
+> 🪟 **Windows:** làm toàn bộ bài trong **Git Bash** (cài kèm Git for Windows). Không dùng Command Prompt (`cmd`).
+
 ## Bài 1 — Điều hướng
 1. Mở terminal, gõ `pwd` → ghi lại đường dẫn.
 2. `cd ~` → `ls -la`.
-3. Tạo thư mục `drill` trên Desktop: `mkdir -p ~/Desktop/drill`.
-4. `cd ~/Desktop/drill` → `pwd` xác nhận.
+3. Tạo thư mục `drill` trong Workspace: `mkdir -p ~/Workspace/drill`.
+4. `cd ~/Workspace/drill` → `pwd` xác nhận.
+
+> 🪟 **Windows:** `~` = `C:\Users\<tên-bạn>` → thư mục thật là `C:\Users\<tên-bạn>\Workspace\drill`.
+> (Dùng Workspace thay vì Desktop để tránh trường hợp OneDrive đã chuyển hướng thư mục Desktop.)
 
 ## Bài 2 — Tạo / xóa file
 1. `touch note.txt`
